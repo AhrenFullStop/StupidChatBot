@@ -28,3 +28,7 @@ A: The JS is hosted seperately for ease of changes and referencing.
 
 Q: Whats with the noddy image?
 A: That is for an easteregg coded into the bot.
+
+Licence
+=========================
+Nothing here is proprietary, nor particulaly useful... Go for it.
