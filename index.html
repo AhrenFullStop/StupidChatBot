@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<div>
+    <style>
+        @media all and (orientation:portrait)
+            {
+                .chatbot{
+                font-family: Helvetica, Arial, sans-serif;
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                right: 2%;
+                bottom: 2%;
+                width: 80vw; /* Full width */
+                height: 70vh; /* Full height */
+                overflow: hidden; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+                color: snow;
+                padding:1%;
+                border-radius: 5px;
+            }
+        }
+        @media all and (orientation:landscape)
+            {
+                .chatbot{
+                font-family: Helvetica, Arial, sans-serif;
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                right: 2%;
+                bottom: 2%;
+                width: 20%; /* Full width */
+                height: 500px; /* Full height */
+                overflow: hidden; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+                color: snow;
+                padding:1%;
+                border-radius: 5px;
+            }
+        }
+        
+        .botImageContainer{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+            border-style: solid;
+            background: #000;
+            float: left;
+        }
+        .botImage{
+            width: 250%;
+            background: #000;
+        }
+        .close_852{
+            color: red;
+            font-weight: 900;
+            margin:0;
+            border-radius: 50%;
+            position: absolute;
+            top:0px;
+            right:0px;
+            width: 25px;
+            height:25px;
+            text-align: center;
+            padding: 0;
+        }
+        #container_852
+        {
+            position: absolute;
+            bottom:5%;
+            width: 90%;
+            height: 20px;
+        }
+        #input_852
+        {
+            width: 90%;
+            height:100%;
+        }
+        #output_852
+        {
+            height: 65%;
+            overflow: auto;
+            font-size:14px; 
+            width: 100%;
+        }
+        #messages_852
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #messages_852 li{
+            display:inline-block;
+            clear: both;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right:20px;
+            border-radius: 30px;
+            width: auto;
+            max-width: 60%;
+            margin-bottom: 2px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .youChat_852{
+            background: #eee;
+            float: left;
+            color: #000;
+        }
+        .botChat_852
+        {
+            float: right;
+            background: #0084ff;
+            color: #fff;
+        }
+        #myBtn_852
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: fixed;
+            right: 2%;
+            bottom: 2%;
+        }
+    </style>
+    <button id="myBtn_852">ChatBot</button>
+    <div class='chatbot' id='chatbot'>
+        <button class="close_852" id="close_852">&times;</button>
+        <div class="botImageContainer">
+            <img class="botImage" id="botImage" src="http://ahrenfullstop.com/assets/images/botImg.png"/>
+        </div>
+        <br>
+        <h3 style="text-align: center;color: #fff;">What Can I help You With?</h3>
+        <br><br>
+        <!--<p>Suggestions to ask for:</p>
+        <ul>
+            <li>A contact <strong>email</strong></li>
+            <li>a <strong>link</strong> to a special part of the site </li>
+            <li><strong>Why</strong> this site exists</li>
+            <li>Tell me your name</li>
+        </ul>-->
+        <div id="output_852">
+            <ul id="messages_852"></ul>
+        </div>
+        <div id="container_852">
+            <input type="text" id="input_852" onkeydown="isenter(event)" value=""> 
+        </div>      
+    </div>
+    <!-- chatbot script  
+    <script src="https://ahrenfullstop.com/chatbot.js"></script>-->  
+    <script src="./chatbot.js"></script> 
+</div>
