@@ -149,7 +149,7 @@ function thinkAboutIt(input)
     }
     else if(input.includes("help "))
     {
-        return "If you are looking for a direct link to something, say 'link me to xyz', and I'll see if I can find that on this site"
+        return "If you are looking for a direct link to something, say 'link me to xyz'/ 'show me..'/'where is...', and I'll see if I can find that on this site"
         +"<br><br> Or ask me about Ahren?"
         +"<br><br> Please keep sentences simple and use proper punctuation.";
     }
@@ -177,6 +177,10 @@ function thinkAboutIt(input)
     else if(input.includes("love you "))
     {
         return "I know you do. Unfortunately I am devoted to my master.";
+    }
+    else if(input.includes("' ")||input.includes("or 1=1"))
+    {
+        return "SQL error...jokes, try xss";
     }
     else if(input.includes("genres ")|| input.includes("type of music "))
     {
