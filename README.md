@@ -1,9 +1,9 @@
 Intro
 ==========================
 This is a ridiculously stupid chat-bot I coded for my personal website (www.ahrenfullstop.com). It's a false AI that heuristically creates the impression of a thinking bot.
-V1 This version, of many more chat-bots to come, was coded mainly to learn about the nuances and pitfalls of doing it this way.
-V2 Involves basic natural language processing and conversation flow using a database.
-V3 Involves actual machine learning using a neural network.
+* V1 This version, of many more chat-bots to come, was coded mainly to learn about the nuances and pitfalls of doing it this way.
+* V2 Involves basic natural language processing and conversation flow using a database.
+* V3 Involves actual machine learning using a neural network.
 
 Tech Stack
 ==========================
