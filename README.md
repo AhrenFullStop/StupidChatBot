@@ -21,12 +21,15 @@ This all appeals to human heuristics which may lead to the impression of intelli
 Why? Just... why?
 ==========================
 Q: Why is the CSS in the same file as the HTML???
+
 A: Because adding resources from a seperate CSS file causes issues in a wordpress site. All in one is the easiest fix.
 
 Q: Okay, so then why is the JS seperate?
+
 A: The JS is hosted seperately for ease of changes and referencing.
 
 Q: Whats with the noddy image?
+
 A: That is for an easteregg coded into the bot.
 
 Licence
